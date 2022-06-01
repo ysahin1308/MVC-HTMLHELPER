@@ -1,0 +1,74 @@
+﻿@model ProgrammiererAnlegen.Models.Person
+@{
+    ViewData["Title"] = "Home Page";
+
+}
+
+
+@using (Html.BeginForm("index", "home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    if (ViewBag.Vorname == null)
+    {
+        @Html.LabelFor(m => m.Vorname)
+        <br />
+        @Html.EditorFor(m => m.Vorname)
+        <br />
+        @Html.LabelFor(m => m.Nachname)
+        <br />
+        @Html.EditorFor(m => m.Nachname)
+        <br />
+        @Html.LabelFor(m => m.EMail)
+        <br />
+        @Html.EditorFor(m => m.EMail)
+        <br />
+        @Html.LabelFor(m => m.Geschlecht)
+        <br />
+        <label>männlich</label>
+        @Html.RadioButtonFor(model => model.Geschlecht, "männlich")
+        <label>weiblich</label>
+        @Html.RadioButtonFor(m => m.Geschlecht, "weiblich")
+        <br />
+        @Html.LabelFor(m => m.Aufgabe)
+        @Html.DropDownList("DieAufgaben")
+        <br />
+        @Html.LabelFor(m => m.Projekt)
+        @Html.ListBox("DieProjekte")
+        <br />
+        <input type="submit" id="button" value="Speichern" />
+    }
+    else
+    {
+        @Html.LabelFor(m => m.Vorname)
+        <br />
+        @Html.EditorFor(m => m.Vorname)
+        <br />
+        @Html.LabelFor(m => m.Nachname)
+        <br />
+        @Html.EditorFor(m => m.Nachname)
+        <br />
+        @Html.LabelFor(m => m.EMail)
+        <br />
+        @Html.EditorFor(m => m.EMail)
+        <br />
+        @Html.LabelFor(m => m.Geschlecht)
+        <br />
+        <label>männlich</label>
+        @Html.RadioButtonFor(model => model.Geschlecht, "männlich")
+        <label>weiblich</label>
+        @Html.RadioButtonFor(m => m.Geschlecht, "weiblich")
+        <br />
+        @Html.LabelFor(m => m.Aufgabe)
+        @Html.DropDownList("DieAufgaben")
+        <br />
+        @Html.LabelFor(m => m.Projekt)
+        @Html.ListBox("DieProjekte")
+        <br />
+        <input type="submit" id="button" value="Speichern" />
+
+        
+    }
+
+
+
+}
+
