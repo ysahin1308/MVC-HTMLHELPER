@@ -8,5 +8,6 @@ namespace ProgrammiererAnlegen.Models
     public class Class
     {
         public int ID { get; set; }
+        public int der { get; set; }
     }
 }
