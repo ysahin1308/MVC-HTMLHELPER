@@ -15,7 +15,8 @@ namespace ProgrammiererAnlegen.Models
             {
                 new AufgabenClass { Id = 1, Name = "Programmierer" },
                 new AufgabenClass { Id = 2, Name = "Systemintegrator" },
-                new AufgabenClass { Id = 3, Name = "CyberSecurity" }
+                new AufgabenClass { Id = 3, Name = "CyberSecurity" },
+                new AufgabenClass { Id=4,Name = "DevOps"}
             };
         }
     }
