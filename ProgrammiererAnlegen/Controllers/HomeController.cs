@@ -13,6 +13,7 @@ namespace ProgrammiererAnlegen.Controllers
     public class HomeController : Controller
     {
         // Ohoh, ich sehe kein Dependency Injection ;)
+        // naja ab und passiert sowas ne :D
 
         private readonly ILogger<HomeController> _logger;
 
